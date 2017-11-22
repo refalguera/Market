@@ -41,14 +41,39 @@ export class CadastroPage {
     console.log(this.user);
     console.log(this.pass);
 
-    if (this.nome == null)
-      console.log("ihu");
+    if (this.tipocadastro=="cliente"){
+    if (this.nome == null || this.cpf==null || this.end==null || this.tel==null || this.user==null || this.pass==null ){
+      this.doAlert();
+    }
+    else {
+      this.doOkay();
+    }
   }
+
+  if (this.tipocadastro=="empresa"){
+  if (this.nome == null || this.cpf==null || this.end==null || this.tel==null || this.user==null || this.pass==null || this.dono==null ){
+    this.doAlert();
+  }
+  else {
+    this.doOkay();
+  }
+}
+  
+}
 
   doAlert() {
     let alert = this.alerCtrl.create({
       title: 'Erro!',
       message: 'Há um campo vazio!',
+      buttons: ['Ok']
+    });
+    alert.present()
+  }
+
+  doOkay() {
+    let alert = this.alerCtrl.create({
+      title: 'Sucesso!',
+      message: 'Cadastro efetuado com sucesso!',
       buttons: ['Ok']
     });
     alert.present()
