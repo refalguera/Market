@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ContatoPage } from '../contato/contato';
+import { PedidosPage } from '../pedidos/pedidos';
+import { CarrinhoPage } from '../carrinho/carrinho';
+import { PerfilPage } from '../perfil/perfil';
+
 
 /**
  * Generated class for the UserloginPage page.
@@ -22,8 +26,6 @@ export class UserloginPage {
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
 
 	}
-
-
 
 	// Inicialização dos itens
 
@@ -51,10 +53,25 @@ export class UserloginPage {
     	console.log('ionViewDidLoad UserloginPage');
   	}
 
-  showAnother(){
-    this.navCtrl.push(ContatoPage);
-    console.log("ihu");
-  }
+  	LetsGoContato(){
+    	this.navCtrl.push(ContatoPage);
+    	console.log("Página de contatos aberta!");
+  	}
+
+  	LetsGoPedidos(){
+  		this.navCtrl.push(PedidosPage);
+  		console.log("Página de pedidos aberta!");
+  	}
+
+  	LetsGoCarrinho(){
+  		this.navCtrl.push(CarrinhoPage);
+  		console.log("Pagina de carrinho aberta!");
+  	}
+
+  	LetsGoPerfil(){
+  		this.navCtrl.push(PerfilPage);
+  		console.log("Pagina de perfil aberta!");
+  	}
 
 	// Inicialização dos itens
 	initializeItems() {

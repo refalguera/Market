@@ -3,12 +3,14 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { UserloginPage } from '../pages/userlogin/userlogin';
 import { ContatoPage } from '../pages/contato/contato';
+import { PedidosPage } from '../pages/pedidos/pedidos';
+import { CarrinhoPage } from '../pages/carrinho/carrinho';
+import { PerfilPage } from '../pages/perfil/perfil';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,10 @@ import { ContatoPage } from '../pages/contato/contato';
     HomePage,
     CadastroPage,
     UserloginPage,
-    ContatoPage
+    ContatoPage,
+    PedidosPage,
+    CarrinhoPage,
+    PerfilPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,10 @@ import { ContatoPage } from '../pages/contato/contato';
     HomePage,
     CadastroPage,
     UserloginPage,
-    ContatoPage
+    ContatoPage,
+    PedidosPage,
+    CarrinhoPage,
+    PerfilPage
   ],
   providers: [
     StatusBar,

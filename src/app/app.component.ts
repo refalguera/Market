@@ -7,6 +7,11 @@ import { HomePage } from '../pages/home/home';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { UserloginPage } from '../pages/userlogin/userlogin';
 import { ContatoPage } from '../pages/contato/contato';
+import { PedidosPage } from '../pages/pedidos/pedidos';
+import { CarrinhoPage } from '../pages/carrinho/carrinho';
+import { PerfilPage } from '../pages/perfil/perfil';
+
+
 
 @Component({
   templateUrl: 'app.html'
