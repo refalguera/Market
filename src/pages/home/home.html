@@ -22,4 +22,16 @@
       <button ion-button (click)="letsGoLogin()" clear>Login</button>
       <button ion-button (click)="letsGoCadastro()" clear>Cadastrar</button>
 
+    <!-- Radio Button momentaneo, para que se escolha se logará como CLIENTE ou EMRPESA-->
+      <ion-list radio-group [(ngModel)]="tpyHomeLogin">
+          <ion-item>
+            <ion-label>Cliente</ion-label>
+            <ion-radio value="cliente" checked></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Empresa</ion-label>
+            <ion-radio  value="empresa"></ion-radio>
+          </ion-item>
+        </ion-list>
+
 </ion-content>

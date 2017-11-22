@@ -17,7 +17,7 @@
   <ion-list>
    <ion-item>
      <ion-label>Motivo</ion-label>
-     <ion-select [(ngModel)]="gender">
+     <ion-select [(ngModel)]="tpy">
        <ion-option value="reclamacao">Reclamação</ion-option>
        <ion-option value="duvida">Dúvida</ion-option>
        <ion-option value="sugestao">Sugestão</ion-option>
@@ -26,8 +26,8 @@
    </ion-item>
  </ion-list>
  <ion-item>
-   <ion-textarea placeholder="Digite sua mensagem" ></ion-textarea>
+   <ion-textarea placeholder="Digite sua mensagem" [(ngModel)]="texto" ></ion-textarea>
 </ion-item>
 
-<button ion-button full class="botao">ENVIAR</button>
+<button ion-button (click)="sendContato()" full class="botao">ENVIAR</button>
 </ion-content>
