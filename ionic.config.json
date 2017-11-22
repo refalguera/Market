@@ -1,6 +1,8 @@
 {
-  "name": "ecommerce",
-  "app_id": "616375e2",
+  "name": "anyMarket",
+  "app_id": "db3e1879",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
