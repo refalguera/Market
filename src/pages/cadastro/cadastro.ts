@@ -22,6 +22,7 @@ export class CadastroPage {
     dono:any;
     user:any;
     pass:any;
+    tipocadastro:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
