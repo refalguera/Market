@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the CadastroPage page.
@@ -24,8 +25,7 @@ export class CadastroPage {
     pass:any;
     tipocadastro:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController ) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CadastroPage');
@@ -40,6 +40,18 @@ export class CadastroPage {
     console.log(this.dono);
     console.log(this.user);
     console.log(this.pass);
+
+    if (this.nome == null)
+      console.log("ihu");
+  }
+
+  doAlert() {
+    let alert = this.alerCtrl.create({
+      title: 'Erro!',
+      message: 'Há um campo vazio!',
+      buttons: ['Ok']
+    });
+    alert.present()
   }
 
 }

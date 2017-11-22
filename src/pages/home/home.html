@@ -15,11 +15,11 @@
 
         <ion-item>
           <ion-label floating>Senha </ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-input [(ngModel)]="pass" type="password"></ion-input>
         </ion-item>
       </ion-list>
 
-      <button ion-button clear>Login</button>
+      <button ion-button (click)="letsGoLogin()" clear>Login</button>
       <button ion-button (click)="letsGoCadastro()" clear>Cadastrar</button>
 
 </ion-content>
