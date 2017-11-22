@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ContatoPage } from '../contato/contato';
 
 /**
- * Generated class for the UserloginPage page.
+ * Generated class for the ContatoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,21 +10,16 @@ import { ContatoPage } from '../contato/contato';
 
 @IonicPage()
 @Component({
-  selector: 'page-userlogin',
-  templateUrl: 'userlogin.html',
+  selector: 'page-contato',
+  templateUrl: 'contato.html',
 })
-export class UserloginPage {
+export class ContatoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad UserloginPage');
-  }
-
-  showAnother(){
-    this.navCtrl.push(ContatoPage);
-    console.log("ihu");
+    console.log('ionViewDidLoad ContatoPage');
   }
 
 }
