@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ContatoPage page.
+ * Generated class for the EmpresaProdutosPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,24 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-contato',
-  templateUrl: 'contato.html',
+  selector: 'page-empresa-produtos',
+  templateUrl: 'empresa-produtos.html',
 })
-export class ContatoPage {
-
-  tpy:any;
-  texto:any;
+export class EmpresaProdutosPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ContatoPage');
+    console.log('ionViewDidLoad EmpresaProdutosPage');
   }
 
-  sendContato(){
-    console.log(this.tpy);
-    console.log(this.texto);
-
-  }
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CadastroPage } from '../cadastro/cadastro';
 import { UserloginPage } from '../userlogin/userlogin';
+import { EmpresaPage } from '../empresa/empresa';
 
 @Component({
   selector: 'page-home',
@@ -10,6 +11,9 @@ import { UserloginPage } from '../userlogin/userlogin';
 export class HomePage {
 user:any;
 pass:any;
+tpyHomeLogin:any;
+
+
   constructor(public navCtrl: NavController) {
 
   }
@@ -19,9 +23,18 @@ pass:any;
   }
 
   letsGoLogin(){
-    this.navCtrl.push(UserloginPage);
+    if (this.tpyHomeLogin=="cliente"){
+      this.navCtrl.push(UserloginPage);
+      console.log(this.tpyHomeLogin);
+      console.log(this.user);
+      console.log(this.pass);
+    }
+    if (this.tpyHomeLogin=="empresa") {
+      this.navCtrl.push(EmpresaPage);
+    console.log(this.tpyHomeLogin);
     console.log(this.user);
     console.log(this.pass);
+  }
   }
 
 }
