@@ -18,6 +18,7 @@ export class UserloginPage {
 
 	SearchQuery: string = '';	// Variável para pesquisa
 	items: string[];			// Variável para armazenar os resultados
+<<<<<<< HEAD
 
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
 
@@ -70,5 +71,54 @@ export class UserloginPage {
     this.navCtrl.push(ContatoPage);
     console.log("ihu");
   }
+=======
+
+	constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+	}
+
+
+
+	// Inicialização dos itens
+	initializeItems() {	
+		//Adicionar aqui todos os itens de pesquisa. Lojas e Produtos
+		this.items = [ 
+			'batman',
+			'superman',
+			'betman',
+			'soperman',
+			'bitman',
+			'siperman',
+			'botman',
+			'seperman',
+			'butman',
+			'saperman'
+		]; 
+	}
+	
+	// Busca
+	getItems(ev: any){
+
+		// Pega os itens inicializados.
+		this.initializeItems();
+
+		// Seta a pesquisa na variável 
+		let val = ev.target.value;
+		
+		/* Filtra de acordo com o que está no searchbar
+		O processo funciona de forma automatica enquanto está sendo digitado.
+		Selecionando aquilo que *CONTÉM* o que atualmente está no SearchBar	*/		
+		if (val && val.trim() != ''){
+			this.items = this.items.filter((item) => {
+				return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+			})
+		}
+
+	}	
+
+  	ionViewDidLoad() {
+    	console.log('ionViewDidLoad UserloginPage');
+  	}
+>>>>>>> 3319035d5ee25d2647e70d3632d3df0615838f00
 
 }
