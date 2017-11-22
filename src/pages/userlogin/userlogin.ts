@@ -5,19 +5,12 @@ import { PedidosPage } from '../pedidos/pedidos';
 import { CarrinhoPage } from '../carrinho/carrinho';
 import { PerfilPage } from '../perfil/perfil';
 
-
-/**
- * Generated class for the UserloginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
-  selector: 'page-userlogin',
-  templateUrl: 'userlogin.html',
+	selector: 'page-userlogin',
+	templateUrl: 'userlogin.html',
 })
+
 export class UserloginPage {
 
 	SearchQuery: string = '';	// Variável para pesquisa
@@ -26,8 +19,6 @@ export class UserloginPage {
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
 
 	}
-
-	// Inicialização dos itens
 
 	// Busca
 	getItems(ev: any){
@@ -73,7 +64,7 @@ export class UserloginPage {
   		console.log("Pagina de perfil aberta!");
   	}
 
-	// Inicialização dos itens
+  	// Inicialização dos itens
 	initializeItems() {
 		//Adicionar aqui todos os itens de pesquisa. Lojas e Produtos
 		this.items = [
@@ -89,5 +80,4 @@ export class UserloginPage {
 			'saperman'
 		];
 	}
-
 }
