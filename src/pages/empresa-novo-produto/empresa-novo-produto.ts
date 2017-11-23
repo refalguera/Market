@@ -16,15 +16,19 @@ import { Camera } from '@ionic-native/camera';
 })
 export class EmpresaNovoProdutoPage {
 
+  tpy:any;
   base64Image:any;
+
   constructor(public camera:Camera) {}
- accessGallery(){
-   this.camera.getPicture({
-     sourceType: this.camera.PictureSourceType.SAVEDPHOTOALBUM,
-     destinationType: this.camera.DestinationType.DATA_URL
-    }).then((imageData) => {
-      this.base64Image = 'data:image/jpeg;base64,'+imageData;
-     }, (err) => {
+
+
+    accessGallery(){
+      this.camera.getPicture({
+        sourceType: this.camera.PictureSourceType.SAVEDPHOTOALBUM,
+        destinationType: this.camera.DestinationType.DATA_URL
+      }).then((imageData) => {
+        this.base64Image = 'data:image/jpeg;base64,'+imageData;
+      }, (err) => {
       console.log(err);
     });
   }

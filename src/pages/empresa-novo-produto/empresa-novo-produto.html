@@ -23,28 +23,30 @@
 
   <ion-item>
     <ion-label floating>Valor</ion-label>
-    <ion-input type="number"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-textarea placeholder="Digite a descrição do produto" [(ngModel)]="texto" ></ion-textarea>
-  </ion-item>
-
-  <ion-item>
-    dfdasfasdfasdf
-    <button ion-button color="primary" (click)="accessGallery()">Open Gallery</button>
-    <img [src]="base64Image" *ngIf="base64Image" />
-    <ion-label floating>Imagem</ion-label>
-    <!-- <ion-input type="number"></ion-input> -->
+    <ion-input type="text"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>Categoria</ion-label>
-    <ion-input type="number"></ion-input>
+    <ion-select [(ngModel)]="tpy">
+      <ion-option value="eletronico">Eletrônico</ion-option>
+      <ion-option value="eletrodomestico">Eletrodoméstico</ion-option>
+      <ion-option value="cozinha">Cozinha</ion-option>
+      <ion-option value="informática">Informática</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-textarea [(ngModel)]="texto" ></ion-textarea>
+    <ion-label floating>Digite a descrição do produto</ion-label>
   </ion-item>
 
 </ion-list>
 
-<button ion-button color="primary" (click)="accessGallery()">Open Gallery</button>
-<img [src]="base64Image" *ngIf="base64Image" />
+      <button ion-button (click)="accessGallery()" full class="botao" >Carregar Imagem do Produto</button>
+
+        <ion-item>
+          <img [src]="base64Image" *ngIf="base64Image" />
+        </ion-item>
+
 </ion-content>
