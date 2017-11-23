@@ -4,6 +4,7 @@ import { ContatoPage } from '../contato/contato';
 import { PedidosPage } from '../pedidos/pedidos';
 import { CarrinhoPage } from '../carrinho/carrinho';
 import { PerfilPage } from '../perfil/perfil';
+import { LoadingController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -16,7 +17,7 @@ export class UserloginPage {
 	SearchQuery: string = '';	// Variável para pesquisa
 	items: string[];			// Variável para armazenar os resultados
 
-	constructor(public navCtrl: NavController, public navParams: NavParams) {
+	constructor(public navCtrl: NavController, public navParams: NavParams, public loadingCtrl: LoadingController) {
 
 	}
 
@@ -80,4 +81,12 @@ export class UserloginPage {
 			'saperman'
 		];
 	}
+
+	Loading() {
+    let loader = this.loadingCtrl.create({
+      content: "Please wait...",
+      duration: 500
+    });
+    loader.present();
+  }
 }

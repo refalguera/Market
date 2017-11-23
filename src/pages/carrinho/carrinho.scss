@@ -2,28 +2,10 @@ page-carrinho {
 
 }
 
-.card-background-page {
-
-  ion-card {
+.TrashButton{
     position: relative;
-    text-align: center;
-  }
-
-  .card-title {
-    position: absolute;
-    top: 36%;
-    font-size: 2.0em;
+    top: 50%;
     width: 100%;
-    font-weight: bold;
-    color: #fff;
+    left: 100%	
+    
   }
-
-  .card-subtitle {
-    font-size: 1.0em;
-    position: absolute;
-    top: 52%;
-    width: 100%;
-    color: #fff;
-  }
-
-}
