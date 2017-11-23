@@ -15,6 +15,7 @@ import { EmpresaProdutosPage } from '../pages/empresa-produtos/empresa-produtos'
 import { EmpresaNovoProdutoPage } from '../pages/empresa-novo-produto/empresa-novo-produto';
 import { EmpresaPerfilPage } from '../pages/empresa-perfil/empresa-perfil';
 import { EmpresaAtualizarPage } from '../pages/empresa-atualizar/empresa-atualizar';
+import { Camera } from '@ionic-native/camera';
 
 
 
