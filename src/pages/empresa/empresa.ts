@@ -4,6 +4,7 @@ import { EmpresaProdutosPage } from '../empresa-produtos/empresa-produtos';
 import { EmpresaNovoProdutoPage } from '../empresa-novo-produto/empresa-novo-produto';
 import { EmpresaPerfilPage } from '../empresa-perfil/empresa-perfil';
 import { EmpresaAtualizarPage } from '../empresa-atualizar/empresa-atualizar';
+import { HomePage } from '../home/home';
 
 
 /**
@@ -41,6 +42,10 @@ export class EmpresaPage {
 
   LetsGoAtualizarEmp(){
     this.navCtrl.push(EmpresaAtualizarPage);
+  }
+
+  LetsGoLogin(){
+    this.navCtrl.setRoot(HomePage);
   }
 
 }

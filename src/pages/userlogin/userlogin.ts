@@ -4,6 +4,7 @@ import { ContatoPage } from '../contato/contato';
 import { PedidosPage } from '../pedidos/pedidos';
 import { CarrinhoPage } from '../carrinho/carrinho';
 import { PerfilPage } from '../perfil/perfil';
+import { HomePage } from '../home/home';
 import { LoadingController } from 'ionic-angular';
 
 @IonicPage()
@@ -62,6 +63,11 @@ export class UserloginPage {
 
   	LetsGoPerfil(){
   		this.navCtrl.push(PerfilPage);
+  		console.log("Pagina de perfil aberta!");
+  	}
+
+		LetsGoLoginUser(){
+  		this.navCtrl.setRoot(HomePage);
   		console.log("Pagina de perfil aberta!");
   	}
 

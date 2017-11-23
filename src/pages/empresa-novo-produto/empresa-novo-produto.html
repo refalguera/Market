@@ -18,12 +18,12 @@
 
   <ion-item>
     <ion-label floating>Nome</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input  [(ngModel)]="nome" type="text"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label floating>Valor</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input [(ngModel)]="valor" type="text"></ion-input>
   </ion-item>
 
   <ion-item>
@@ -48,5 +48,7 @@
         <ion-item>
           <img [src]="base64Image" *ngIf="base64Image" />
         </ion-item>
+
+      <button ion-button (click)="goToPerfil()" full class="botao" >Adicionar Produto</button>
 
 </ion-content>

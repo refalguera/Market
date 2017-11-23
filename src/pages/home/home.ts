@@ -24,13 +24,13 @@ tpyHomeLogin:any;
 
   letsGoLogin(){
     if (this.tpyHomeLogin=="cliente"){
-      this.navCtrl.push(UserloginPage);
+      this.navCtrl.setRoot(UserloginPage);
       console.log(this.tpyHomeLogin);
       console.log(this.user);
       console.log(this.pass);
     }
     if (this.tpyHomeLogin=="empresa") {
-      this.navCtrl.push(EmpresaPage);
+      this.navCtrl.setRoot(EmpresaPage);
     console.log(this.tpyHomeLogin);
     console.log(this.user);
     console.log(this.pass);
