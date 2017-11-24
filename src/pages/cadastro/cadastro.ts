@@ -58,7 +58,7 @@ export class CadastroPage {
     this.doOkay();
   }
 }
-  
+
 }
 
   doAlert() {

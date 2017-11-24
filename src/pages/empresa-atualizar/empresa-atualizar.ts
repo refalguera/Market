@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the EmpresaAtualizarPage page.
@@ -15,11 +16,55 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class EmpresaAtualizarPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  nome:any;
+  cpf:any;
+  end:any;
+  tel:any;
+  dono:any;
+  user:any;
+  pass:any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EmpresaAtualizarPage');
   }
 
+  goAtt(){
+
+
+    if (this.nome == null && this.cpf==null && this.end==null && this.tel==null && this.user==null && this.pass==null && this.dono==null){
+      this.doAlertEmp();
+    }
+    else {
+      this.doOkayEmp();
+    }
+
+  }
+
+  doAlertEmp() {
+    let alert = this.alerCtrl.create({
+      title: 'Cuidado',
+      message: 'Todos os campos estão vazios! Nenhuma alteração realizada!',
+      buttons: ['Ok']
+    });
+    alert.present()
+  }
+
+  doOkayEmp() {
+    let alert = this.alerCtrl.create({
+      title: 'Sucesso!',
+      message: 'Campo(s) digitado(s) alterado(s) com sucesso!',
+      buttons: ['Ok']
+    });
+    alert.present()
+    console.log(this.nome);
+    console.log(this.cpf);
+    console.log(this.end);
+    console.log(this.tel);
+    console.log(this.dono);
+    console.log(this.user);
+    console.log(this.pass);
+  }
 }

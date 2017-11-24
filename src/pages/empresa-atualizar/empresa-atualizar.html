@@ -15,4 +15,45 @@
 
 <ion-content padding>
 
+  <div class="topss">
+    <p>Preencha os campos que deseja alterar</p>
+  </div>
+
+  <ion-item>
+    <ion-label floating>Nome</ion-label>
+    <ion-input [(ngModel)]="nome" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>CNPJ</ion-label>
+    <ion-input [(ngModel)]="cpf" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Endereço</ion-label>
+    <ion-input [(ngModel)]="end" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Telefone</ion-label>
+    <ion-input [(ngModel)]="tel" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Responsável</ion-label>
+    <ion-input [(ngModel)]="dono" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Usuário</ion-label>
+    <ion-input [(ngModel)]="user" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Senha</ion-label>
+    <ion-input [(ngModel)]="pass" type="password"></ion-input>
+  </ion-item>
+
+  <button ion-button (click)="goAtt()" full class="botao" >OK</button>
+
 </ion-content>

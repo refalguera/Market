@@ -1,3 +1,36 @@
 page-empresa-perfil {
+        .bg{
+            background-image: url('../../assets/imgs/casas-bahia.jpg');
+            height: 300px;
+            background-size: cover;
+            filter: blur(5px);
+            background-position: center;
+        }
 
+        .main-cnt {
+          width: 100%;
+          height: 80px;
+          background-color: #efefef;
+        }
+
+        .dp{
+          border-radius: 50%;
+          height: 100px;
+          width: 100px;
+          z-index: 10;
+          margin-top: -70px;
+          position: relative;
+          left: 50%;
+          margin-right:-50%;
+          transform: translate(-50%,-50%);
+          box-shadow: -6px 15px 81px 3px rgba(0, 0, 0, 0.75);
+
+        }
+
+
+        .mg{
+          margin-top: 90px;
+          position: relative;
+          z-index: 10;
+        }
 }
