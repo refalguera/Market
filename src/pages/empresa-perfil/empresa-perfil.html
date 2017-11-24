@@ -7,12 +7,34 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Perfil da Empresa</ion-title>
+    <ion-title>Bem-Vindo(a)</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content parallax>
+  <ion-fab top right >
+     <button ion-fab color="secondary" mini><ion-icon name="menu"></ion-icon></button>
+     <ion-fab-list>
+       <button (click)="LetsGoNovoProduto()" ion-fab><ion-icon name="add-circle"></ion-icon></button>
+       <button (click)="LetsGoAtualizarEmp()" ion-fab><ion-icon name="settings"></ion-icon></button>
+       <button (click)="LetsGoLogin()" ion-fab><ion-icon name="log-out"></ion-icon></button>
+     </ion-fab-list>
+   </ion-fab>
+  <div class="bg">
+  </div>
+
+  <div class="main-cnt">
+      <img src="/assets/imgs/casas-bahia.jpg" class="dp">
+      <h1 text-center>Casas Bahia </h1>
+      <p text-center>Telefone : {{telefoneemp}} </p>
+  </div>
+
+    <ion-row>
+     <ion-col width-50 style="text-align: center">
+       <button (click)="LetsGoProdutos()" ion-button round class="mg">PRODUTOS</button>
+     </ion-col>
+  </ion-row>
 
 </ion-content>

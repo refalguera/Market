@@ -28,24 +28,4 @@ export class EmpresaPage {
     console.log('ionViewDidLoad EmpresaPage');
   }
 
-  LetsGoProdutos(){
-    this.navCtrl.push(EmpresaProdutosPage);
-  }
-
-  LetsGoNovoProduto(){
-    this.navCtrl.push(EmpresaNovoProdutoPage);
-  }
-
-  LetsGoPerfilEmp(){
-    this.navCtrl.push(EmpresaPerfilPage);
-  }
-
-  LetsGoAtualizarEmp(){
-    this.navCtrl.push(EmpresaAtualizarPage);
-  }
-
-  LetsGoLogin(){
-    this.navCtrl.setRoot(HomePage);
-  }
-
 }

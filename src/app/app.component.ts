@@ -16,6 +16,9 @@ import { EmpresaNovoProdutoPage } from '../pages/empresa-novo-produto/empresa-no
 import { EmpresaPerfilPage } from '../pages/empresa-perfil/empresa-perfil';
 import { EmpresaAtualizarPage } from '../pages/empresa-atualizar/empresa-atualizar';
 import { Camera } from '@ionic-native/camera';
+import { ParallaxDirective } from '../directives/parallax/parallax';
+
+
 
 
 

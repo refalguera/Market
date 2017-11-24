@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import { CadastroPage } from '../cadastro/cadastro';
 import { UserloginPage } from '../userlogin/userlogin';
 import { EmpresaPage } from '../empresa/empresa';
+import { ParallaxDirective } from '../../directives/parallax/parallax';
+import { EmpresaPerfilPage } from '../empresa-perfil/empresa-perfil';
 import { Camera } from '@ionic-native/camera';
 
 @Component({
@@ -31,7 +33,7 @@ tpyHomeLogin:any;
       console.log(this.pass);
     }
     if (this.tpyHomeLogin=="empresa") {
-      this.navCtrl.setRoot(EmpresaPage);
+      this.navCtrl.setRoot(EmpresaPerfilPage);
     console.log(this.tpyHomeLogin);
     console.log(this.user);
     console.log(this.pass);
