@@ -4,8 +4,17 @@ page-carrinho {
 
 .TrashButton{
     position: relative;
-    top: 50%;
-    width: 100%;
-    left: 100%	
+    right: 0%	
     
-  }
+}
+
+.produtoimg{
+	position: relative;
+    height: 120px;
+    width: 160px;
+    left: 16%;
+}
+
+.small {
+	font-size: small;
+}

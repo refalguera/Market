@@ -10,54 +10,35 @@
 
   <ion-card>
     <ion-card-content>
-      <ion-row>
-      <ion-col col-9>
-        <h4>
-          <p>ID: 013928123
-          <p>R$: 109,90
-          <p>Itens: 9
-        </h4>
-      </ion-col>
-      <ion-col>
-        <button ion-button color="danger" clear>
-          <ion-icon name="checkmark"></ion-icon>
-        </button>
-      </ion-col>
-      </ion-row>
+      <ion-list>
+        <ion-item>
+          <img src="../../../assets/imgs/panela.png" class = "produtoimg"/>
+        </ion-item>
+        <ion-item class = "small">
+            Panela de Pressão Amazonasbr
+            <br> ID : 28312131
+              <button ion-button color="danger" clear class = "TrashButton" item-end>
+                <ion-icon name="trash"></ion-icon>
+              </button>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label floating>Quantidade</ion-label>
+            <ion-input [(ngModel)]="quantidade" type="number"></ion-input>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 
 	<ion-card>
-    <img src="../../../assets/imgs/PedidoFinalizado.png"/>
-      <ion-card-content>
-        <ion-row>
-          <ion-col col-9>
-            colchão gazin master blaster confortável
-          </ion-col>
-          <ion-row>
-            Quantidade = 3
-          </ion-row>
-          <ion-col align-self-right text-center>
-              <button ion-button color="danger" clear>
-              <ion-icon name="trash"></ion-icon>
-          </button>
-        </ion-col>
-      <ion-row>
-        ID: 923912372
-      </ion-row>
-      </ion-row>      
-    </ion-card-content>
-  </ion-card>
-
-	<ion-card>
-		<img src="../../../assets/imgs/PedidoCancelado.png"/>
+		<img src="../../../assets/imgs/iphone.jpg"/>
   		<ion-card-content>
   			<ion-row>
     			<ion-col col-9>
     				Panela de Aço super master blaster 
 			    </ion-col>
     			<ion-col align-self-right text-center>
-        			<button ion-button color="danger" clear>
+        			<button ion-button color="danger" clear class = "TrashButton">
   						<ion-icon name="trash"></ion-icon>
 					</button>
 				</ion-col>
