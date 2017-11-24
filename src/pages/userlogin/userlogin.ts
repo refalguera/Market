@@ -66,9 +66,9 @@ export class UserloginPage {
   		console.log("Pagina de perfil aberta!");
   	}
 
-		LetsGoLoginUser(){
+	LetsGoLoginUser(){
   		this.navCtrl.setRoot(HomePage);
-  		console.log("Pagina de perfil aberta!");
+  		console.log("Pagina de login aberta!");
   	}
 
   	// Inicialização dos itens
