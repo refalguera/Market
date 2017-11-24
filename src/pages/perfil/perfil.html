@@ -1,11 +1,62 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Perfil</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>Perfil</ion-title>
+	</ion-navbar>
 
 </ion-header>
 
+<ion-content padding>
+	<ion-card>
+      <img [src]="base64Image" *ngIf="base64Image" class = "dp"/>
+      	<ion-card-content>
+        	<ion-row>
+          		<ion-col col-8>Cliente da Silva Sauro
+          		</ion-col>
+          		<ion-col align-self-right text-center>
+          			<button ion-button color="primary" (click)="accessGallery()" clear>
+						<ion-icon name="camera"></ion-icon>
+    				</button>
+        		</ion-col>
+      			<ion-row>
+        			ID: 019293
+      			</ion-row>
+      		</ion-row>      
+    	</ion-card-content>
+  	</ion-card>
 
-<ion-content>
+    <ion-list>
+
+    	<ion-item>
+        	<ion-label floating>Nome</ion-label>
+        	<ion-input [(ngModel)]="nome" type="text"></ion-input>
+      	</ion-item>
+
+		<ion-item>
+			<ion-label floating>CPF</ion-label>
+			<ion-input [(ngModel)]="cpf" type="text"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label floating>Endereço</ion-label>
+			<ion-input [(ngModel)]="end" type="text"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label floating>Telefone</ion-label>
+			<ion-input [(ngModel)]="tel" type="text"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label floating>Usuário</ion-label>
+			<ion-input [(ngModel)]="user" type="text"></ion-input>
+		</ion-item>
+
+      	<ion-item>
+        	<ion-label floating>Senha</ion-label>
+        	<ion-input [(ngModel)]="pass" type="password"></ion-input>
+      	</ion-item>
+
+  		<button ion-button (click)="showData()" block class="botao" >Alterar</button>
+    </ion-list>
 </ion-content>
