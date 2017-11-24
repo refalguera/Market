@@ -14,5 +14,43 @@
 
 
 <ion-content padding>
+  <ion-list>
+   <ion-item>
+     <ion-label>Categoria</ion-label>
+     <ion-select [(ngModel)]="tpyProduto">
+       <ion-option value="eletronico">Eletrônico</ion-option>
+       <ion-option value="eletrodomestico">Eletrodoméstico</ion-option>
+       <ion-option value="cozinha">Cozinha</ion-option>
+       <ion-option value="informática">Informática</ion-option>
+     </ion-select>
+   </ion-item>
 
+   <ion-card>
+
+    <img src="assets/imgs/bike.jpg"/>
+
+    <ion-card-content>
+      <ion-card-title>
+        Super Bicicleta Potente
+      </ion-card-title>
+      <p>
+        Valor: 121,90
+      </p>
+      <p>
+        Descriçãi asdfbnasudfhnaosudf
+      </p>
+</ion-card-content>
+<ion-row no-padding>
+ <ion-col>
+   <button ion-button clear small icon-start>
+     <ion-icon name='cart'></ion-icon>
+     Add no Carrinho
+   </button>
+</ion-col>
+</ion-row>
+</ion-card>
+
+
+
+  </ion-list>
 </ion-content>
